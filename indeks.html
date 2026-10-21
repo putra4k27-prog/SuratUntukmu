@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio Saya</title>
+    <!-- Google Fonts & FontAwesome untuk Ikon -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* CSS Reset & Styling Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigasi */
+        header {
+            background: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #007bff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #007bff, #00d2ff);
+            color: white;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #fff;
+            color: #007bff;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* Bagian Konten (Tentang & Kontak) */
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsif untuk HP */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .nav-links {
+                display: none; /* Sederhana: bisa dikembangkan dengan hamburger menu */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">Portofolio.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Bagian Utama / Hero -->
+    <section id="home" class="hero" style="margin-top: 0;">
+        <div class="hero-content">
+            <h1>Halo, Saya <span id="nama-pengguna">Web Developer</span></h1>
+            <p>Selamat datang di website portofolio pertama saya yang dibuat dengan HTML & CSS.</p>
+            <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang Saya -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seseorang yang antusias dalam dunia pembuatan website dan teknologi. Website ini adalah contoh struktur dasar menggunakan HTML dan CSS yang bersih serta responsif.</p>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact">
+        <h2>Hubungi Saya</h2>
+        <p>Tertarik untuk bekerja sama atau ingin sekadar menyapa? Silakan hubungi saya melalui:</p>
+        <p style="margin-top: 15px;">
+            <i class="fa-solid fa-envelope"></i> email@contoh.com<br>
+            <i class="fa-solid fa-phone"></i> +62 812-3456-7890
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dibuat dengan ❤️ oleh Anda.</p>
+    </footer>
+
+    <!-- JavaScript Sederhana -->
+    <script>
+        // Contoh interaksi sederhana menggunakan JavaScript
+        console.log("Website berhasil dimuat!");
+    </script>
+</body>
+</html>
